@@ -14,7 +14,6 @@
     <b-form-group id="input-group-name" label="Tu nombre:" label-for="input-name">
       <b-form-input id="input-name"
         v-model="form.name"
-        required
         placeholder="Ingresa tu nombre">
       </b-form-input>
     </b-form-group>
@@ -27,7 +26,6 @@
       id="input-email"
       v-model="form.email"
       type="email"
-      required
       placeholder="Ingresa tu correo electrónico">
       </b-form-input>
   </b-form-group>
@@ -35,10 +33,9 @@
 
   <b-form-group id="input-group-phone" label="Tu celular:"
   label-for="input-phone"
-  description="Código de tu país, ejemplo (+573192937849)">
+  description="Ingresa el código de tu país, ejemplo (COLOMBIA +573192937849)">
     <b-form-input id="input-phone"
       v-model="form.phone_number"
-      required
       placeholder="Ingresa tu nombre">
       </b-form-input>
   </b-form-group>
@@ -47,13 +44,13 @@
     <b-form-textarea
       id="textarea"
       v-model="form.message"
-      required
       placeholder="Déjanos un mensaje"
       rows="3"
       max-rows="6"
     ></b-form-textarea>
   </b-form-group>
   <b-button type="submit" variant="primary" >Enviar</b-button>
+  <b-button variant="warning" @click="cleanForm()" >Limpiar</b-button>
 </b-form>
 </b-container>
 </div>
@@ -75,7 +72,7 @@ export default {
   methods: {
     sendForm() {
       if(this.form.name.length !== 0 && this.form.email.length !== 0
-        && this.form.phone_number.length !== 0 && this.form.message.length){
+        && this.form.phone_number.length !== 0 && this.form.message.length !== 0){
           this.axios.post('http://127.0.0.1:8000/api/v1/contact/insert', this.form)
             .then((response) => {
               if (response.statusText === 'Created') {
@@ -87,6 +84,13 @@ export default {
         }else{
           this.$alertify.error('Por favor llena todos los campos');
         }
+        
+    },
+    cleanForm(){
+      this.form.name = '';
+      this.form.email = '';
+      this.form.phone_number = '+57';
+      this.form.message = '';
     }
   }
 }
