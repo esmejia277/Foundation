@@ -37,13 +37,13 @@
             </b-dropdown-item>
             <b-dropdown-item class="links">
               <router-link to="/programas/plan-padrino" class="dropdown-link">
-                <i class="far fa-heart"></i>
+                <i class="fas fa-child"></i>
                 Plan padrino
               </router-link>
             </b-dropdown-item>
             <b-dropdown-item class="links">
               <router-link to="/programas/familias" class="dropdown-link">
-                <i class="far fa-heart"></i>
+                <i class="fas fa-users"></i>
                 Apoyo a familias
               </router-link>
             </b-dropdown-item>
@@ -76,12 +76,12 @@ export default {
 <style scoped>
 
 .nav-link {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .dropdown-link {
   color: black;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 20px;
 }
 </style>

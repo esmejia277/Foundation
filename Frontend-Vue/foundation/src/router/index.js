@@ -36,7 +36,7 @@ export default new Router({
     },
     {
       path: '/programas/familias',
-      name: 'father',
+      name: 'families',
       component: () => import('../components/Families.vue')
     },
     {

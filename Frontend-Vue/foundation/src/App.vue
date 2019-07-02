@@ -18,8 +18,10 @@ export default {
 
 <style>
 
-*{
+body{
   font-family: 'Ubuntu mono', monospace;
+  font-size: 1.5rem;
+  
 }
 
 </style>
