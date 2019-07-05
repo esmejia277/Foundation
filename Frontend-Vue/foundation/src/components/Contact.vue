@@ -5,6 +5,8 @@
   puedes poner dudas, sugerencias, inquietudes."/>
   
 <b-container class="mt-5">
+  <b-row>
+    <b-col cols="7">
   <b-form @submit="sendForm">
     <b-form-group id="input-group-name" label="Tu nombre:" label-for="input-name">
       <b-form-input id="input-name"
@@ -67,7 +69,38 @@
   
   <b-button type="submit" variant="primary" >Enviar</b-button>
   <b-button variant="warning" @click="cleanForm()" >Limpiar</b-button>
+  
 </b-form>
+  </b-col>
+
+<b-col class="ml-5" >
+  <h2>
+    <b-badge variant="dark" pill>Dirección:</b-badge>
+  </h2>
+  <p>Carrera 51 #54-12 Itagüí Colombia.</p>
+  
+  <h2>
+    <b-badge variant="dark" pill>Teléfono:</b-badge>
+  </h2>
+  <p>321 615 6158</p>
+  
+  <h2>
+    <b-badge variant="dark" pill>Correo electrónico:</b-badge>
+  </h2>
+  <p>resplandorsocial@gmail.com</p>
+  
+  <h2>
+    <b-badge variant="dark" pill>Redes sociales</b-badge> <br>
+  </h2>
+  
+  <a href="https://www.facebook.com/Fundacion-El-Resplandor-de-tu-Gloria-172955893347063/" target="__blank">
+   <i class="fab fa-facebook-square"></i>
+ </a>
+ <a href="https://www.instagram.com/elresplandordetugloria/?hl=en" target="__blank">
+   <i class="fab fa-instagram"></i>
+ </a>
+</b-col>
+</b-row>
 </b-container>
 </div>
 </template>
@@ -85,7 +118,7 @@ import jumbotron from './generic/Jumbotron'
 
 export default {
   name: 'Contact',
-  components:{
+  components: {
     jumbotron
   },
   data() {
@@ -113,7 +146,7 @@ export default {
         required,
         numeric,
         minLength: minLength(10)
-        
+
 
       },
       message: {
@@ -160,5 +193,14 @@ export default {
   margin-top: 12px;
 }
 
+i{
+  font-size: 60px;
+  margin-top: 7px;
+  color:black;
+}
+
+i:hover{
+  color:grey;
+}
 
 </style>
