@@ -1,12 +1,10 @@
 from django.db import models
-from phonenumber_field.modelfields import PhoneNumberField
-
 # Create your models here.
 
 class Contact(models.Model):
     name = models.CharField(max_length=100, verbose_name='Nombre')
     email = models.EmailField(max_length=100, verbose_name='Correo')
-    phone_number = models.TextField(max_length=10, verbose_name='Celular')
+    phone_number = models.CharField(max_length=10, verbose_name='Celular')
     message = models.TextField(verbose_name='Mensaje')
 
     class Meta:
