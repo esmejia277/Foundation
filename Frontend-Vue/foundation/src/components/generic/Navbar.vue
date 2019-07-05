@@ -3,8 +3,8 @@
   <b-navbar toggleable="md" type="dark" variant="dark" class="navbar-color">
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     <b-navbar-brand>
-      <router-link to="Home" class="navbar-logo">
-        <!-- <img id="logo" src="/static/img/white_logo.png" width="60px;" alt="Logo de la fundación"> -->
+      <router-link to="/" class="navbar-logo">
+        <img id="logo" src="../../assets/white_logo.png" width="80px;" alt="Logo de la fundación">
       </router-link>
     </b-navbar-brand>
     <b-collapse is-nav id="nav_collapse">
