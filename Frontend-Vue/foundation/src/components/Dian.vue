@@ -1,10 +1,21 @@
 <template lang="html">
-  <p>dian</p>
+  <div id="dian">
+    <jumbotron header="Archivos legales" description="Aquí puedes encontrar todos
+    los documentos legales que nos constituyen como fundación ante los entes
+    gubernamentales colombianos."/>
+    
+  </div>
+  
 </template>
 
 <script>
+import jumbotron from './generic/Jumbotron'
+
 export default {
-  name: "dian"
+  name: "dian",
+  components: {
+    jumbotron
+  },
 }
 </script>
 
