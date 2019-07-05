@@ -21,7 +21,8 @@ export default {
 body{
   font-family: 'Ubuntu mono', monospace;
   font-size: 1.5rem;
-  
+  margin-bottom: 70px;
 }
+
 
 </style>

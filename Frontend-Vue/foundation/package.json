@@ -16,7 +16,8 @@
     "vue": "^2.6.10",
     "vue-alertify": "^1.1.0",
     "vue-axios": "^2.1.4",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuelidate": "^0.7.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
