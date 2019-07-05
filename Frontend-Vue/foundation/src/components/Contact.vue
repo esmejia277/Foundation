@@ -1,8 +1,8 @@
 <template lang="html">
   
 <div id="contact">
-  <jumbotron header="Contáctanos" description="Puedes escribirnos un mensaje acerca de nuestro trabajo;
-  puedes poner dudas, sugerencias, inquietudes."/>
+  <jumbotron class="text-justify" header="Contáctanos" description="Puedes escribirnos un mensaje acerca de nuestro trabajo;
+  poner dudas, sugerencias e inquietudes."/>
   
 <b-container class="mt-5">
   <b-row>
@@ -114,12 +114,12 @@ import {
   numeric,
 } from 'vuelidate/lib/validators'
 
-import jumbotron from './generic/Jumbotron'
+import Jumbotron from './generic/Jumbotron'
 
 export default {
   name: 'Contact',
   components: {
-    jumbotron
+    Jumbotron
   },
   data() {
     return {

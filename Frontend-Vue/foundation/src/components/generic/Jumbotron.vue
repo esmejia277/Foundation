@@ -10,7 +10,7 @@
 <script>
 
 export default{
-  nane: 'jumbotron',
+  nane: 'Jumbotron',
   props:[
     'header',
     'description'
