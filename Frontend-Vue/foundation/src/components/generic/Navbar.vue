@@ -4,7 +4,7 @@
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     <b-navbar-brand>
       <router-link to="/" class="navbar-logo">
-        <img id="logo" src="../../assets/white_logo.png" width="80px;" alt="Logo de la fundación">
+        <img id="logo" src="../../assets/img/white_logo.png" width="80px;" alt="Logo de la fundación">
       </router-link>
     </b-navbar-brand>
     <b-collapse is-nav id="nav_collapse">
@@ -48,12 +48,6 @@
               </router-link>
             </b-dropdown-item>
           </b-nav-item-dropdown>
-        </b-nav-item>
-        <b-nav-item>
-          <router-link to="/documentos-legales" class="nav-link">
-            <i class='fas fa-university'></i>
-            DIAN
-          </router-link>
         </b-nav-item>
         <b-nav-item>
           <router-link to="/Contactanos" class="nav-link">
