@@ -37,11 +37,6 @@ export default new Router({
       component: () => import('../components/Families.vue')
     },
     {
-      path: '/documentos-legales',
-      name: 'dian',
-      component: () => import('../components/Dian.vue')
-    },
-    {
       path: '/contactanos',
       name: 'contactanos',
       component: () => import('../components/Contact.vue')

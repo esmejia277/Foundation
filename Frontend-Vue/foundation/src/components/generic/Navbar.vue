@@ -50,12 +50,6 @@
           </b-nav-item-dropdown>
         </b-nav-item>
         <b-nav-item>
-          <router-link to="/documentos-legales" class="nav-link">
-            <i class='fas fa-university'></i>
-            DIAN
-          </router-link>
-        </b-nav-item>
-        <b-nav-item>
           <router-link to="/Contactanos" class="nav-link">
             <i class="far fa-paper-plane"></i>
             Contáctanos
