@@ -74,24 +74,25 @@
   </b-col>
 
 <b-col class="ml-5" >
-  <h2>
-    <b-badge variant="dark" pill>Dirección:</b-badge>
-  </h2>
+  <h3>
+    <strong>Dirección</strong>
+  </h3>
+
   <p>Carrera 51 #54-12 Itagüí Colombia.</p>
   
-  <h2>
-    <b-badge variant="dark" pill>Teléfono:</b-badge>
-  </h2>
+  <h3>
+    <strong>Teléfono</strong>
+  </h3>
   <p>321 615 6158</p>
   
-  <h2>
-    <b-badge variant="dark" pill>Correo electrónico:</b-badge>
-  </h2>
+  <h3>
+    <strong>Correo electrónico</strong>
+  </h3>
   <p>resplandorsocial@gmail.com</p>
   
-  <h2>
-    <b-badge variant="dark" pill>Redes sociales</b-badge> <br>
-  </h2>
+  <h3>
+    <strong>Redes sociales</strong>
+  </h3>
   
   <a href="https://www.facebook.com/Fundacion-El-Resplandor-de-tu-Gloria-172955893347063/" target="__blank">
    <i class="fab fa-facebook-square"></i>
@@ -194,7 +195,7 @@ export default {
 }
 
 i{
-  font-size: 60px;
+  font-size: 45px;
   margin-top: 7px;
   color:black;
 }
