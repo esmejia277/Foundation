@@ -16,8 +16,8 @@
         </b-col>
       </b-row>
       <b-row class="about-info text-center" style="background-color:#f2f2f2;">
-        <b-col cols="4">
-          <h2 class="mb-5">
+        <b-col cols="12" md="4">
+          <h2 class="m-5">
               <b-badge variant="dark" >Misión</b-badge>
           </h2>
           <p class="text-justify">
@@ -27,9 +27,9 @@
             su calidad de vida.
           </p>
         </b-col>
-        <b-col cols="4">
+        <b-col cols="12" md="4">
           <!-- <img src="static/img/climb.png" alt="" style="width:30%; background-color:grey;" class="p-5 rounded-circle"> -->
-          <h2 class="mb-5">
+          <h2 class="m-5">
               <b-badge variant="dark" >Visión</b-badge>
           </h2>
           <p class="text-justify">
@@ -40,8 +40,8 @@
             de apoyo y capacitación para mujeres cabeza de familia.
           </p>
         </b-col>
-        <b-col cols="4">
-          <h2 class="mb-5">
+        <b-col cols="12" md="4">
+          <h2 class="m-5">
               <b-badge variant="dark" >Objeto social</b-badge>
           </h2>
           <p class="text-justify">
@@ -51,41 +51,46 @@
           </p>
         </b-col>
       </b-row>
-
       <b-row class="about-us text-center text-justify text-dark">
-        <b-col style="">
+        <b-col>
           <h2 class="mb-5">
               <b-badge variant="dark" >Dian</b-badge>
           </h2>
           <p >Aquí puedes encontrar todos los documentos legales que nos constituyen
             como fundación ante los entes gubernamentales colombianos.</p>
-            <b-row class="card-file">
-              <b-col cols="3" class="mt-4">
+        </b-col>
+      </b-row>
+      <b-row>
+        <!-- <b-row class="card-file" align-h="center">
+              <b-col  cols="12" md="5" lg="3" class="mt-4">
                   <CardFile title="Acta N°1"  fileLocation="static/dian/acta2019.pdf"/>
               </b-col>
-              <b-col cols="3" class="mt-4">
+            <b-row>
+              <b-col cols="12" md="5" lg="3" class="mt-4">
                   <CardFile title="Antecedentes Judiciales" fileLocation="static/dian/certificado_de_antecedentes.pdf"/>
               </b-col>
-              <b-col cols="3" class="mt-4">
+            </b-row>
+              <b-col cols="12" md="5" lg="3" class="mt-4">
                   <CardFile title="Estatutos de la Fundación" fileLocation="static/dian/estatutos_fundacion.pdf"/>
               </b-col>
-              <b-col cols="3" class="mt-4">
+              <b-col cols="12" md="5" lg="3" class="mt-4">
                   <CardFile title="Estados financieros" fileLocation="static/dian/estados_financieros.pdf"/>
               </b-col>
-              <b-col cols="3" class="mt-4">
+            </b-row>
+            <b-row>
+              <b-col cols="12" md="5" lg="3" class="mt-4">
                   <CardFile title="Dictamen Financiero" fileLocation="static/dian/dictamen_de_revisor.pdf"/>
               </b-col>
-              <b-col cols="3" class="mt-4">
+              <b-col cols="12" md="5" lg="3" class="mt-4">
                   <CardFile title="Industria y comercio" fileLocation="static/dian/certificado_de_industria_y_comercio.pdf"/>
               </b-col>
-              <b-col cols="3" class="mt-4">
+              <b-col cols="12" md="5" lg="3" class="mt-4">
                   <CardFile title="Informe de gestión" fileLocation="static/dian/informe_de_gestion_2018.pdf"/>
               </b-col>
-              <b-col cols="3" class="mt-4">
+              <b-col cols="12" md="5" lg="3" class="mt-4">
                   <CardFile title="Cumplimiento" fileLocation="static/dian/certificado_de_cumplimiento.pdf"/>
               </b-col>
-            </b-row>
-        </b-col>
+            </b-row> -->
       </b-row>
     </b-container>
   </div>
@@ -93,45 +98,53 @@
 </template>
 
 <script>
-
-import CardFile from './generic/CardFile'
+import CardFile from "./generic/CardFile";
 
 export default {
-  name: "Home",
-  components:{
-    CardFile,
-  }
-}
+	name: "Home",
+	components: {
+		CardFile
+	}
+};
 </script>
 
 <style lang="css" scoped>
-
-.header-home{
-    background-image: url('../assets/img/foundation.jpg');
-    background-position: center;
-    background-size: cover;
-    min-height: 75%;
-    background-repeat: no-repeat;
-    padding: 20%;
-    -webkit-filter: contrast(200%);
-    filter: contrast(200%);
-    filter: brightness(70%);
+.header-home {
+	background-image: url("../assets/img/foundation.jpg");
+	background-position: center;
+	background-size: cover;
+	min-height: 75%;
+	background-repeat: no-repeat;
+	padding: 20%;
+	-webkit-filter: contrast(200%);
+	filter: contrast(200%);
+	filter: brightness(70%);
 }
 
-.about-us{
-  color:white;
-  padding: 50px 70px 70px 70px;
-  
+.about-us {
+	color: white;
+  padding: 40px;
 }
 
-.about-info{
-  color:black;
-  padding: 50px 50px 70px 70px;
-  
+.about-info {
+	color: black;
+	padding: 40px;
 }
 
-.card-file{
-  padding: 0 70px 70px 70px;
+.card-file {
+	/* padding: 0 70px 70px 70px; */
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+ 
 }
 
 </style>

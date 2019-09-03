@@ -23,7 +23,7 @@ export default {
 
 body{
   font-family: 'Ubuntu mono', monospace;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 70px;
 }
 

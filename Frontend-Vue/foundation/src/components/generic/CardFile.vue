@@ -4,10 +4,9 @@
     :header="title"
     header-text-variant="dark"
     align="center"
+    style="font-size:1rem;"
     >
-    <b-card-img src="static/img/pdf.png" style="width:120px;"></b-card-img>
-    
-    <b-button variant="outline-success" pill :href="fileLocation" target="__blank">Vizualizar</b-button>
+    <b-button variant="outline-success" pill :href="fileLocation" style="width:50%; font-size:0.6rem;" target="__blank">Ver</b-button>
   </b-card>
   
 </template>
@@ -21,6 +20,3 @@ export default {
   ]
 }
 </script>
-
-<style lang="css" scoped>
-</style>
